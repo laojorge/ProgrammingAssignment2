@@ -8,7 +8,7 @@ makeCacheMatrix <- function(x = numeric()) {
                 m <<- NULL
         }
         get <- function() x
-        setinversematrix <- function(mean) m <<- mean
+        setinversematrix <- function(inversematrix) m <<- inversematrix
         getinversematrix <- function() m
         list(set = set, get = get,
              setinversematrix = setinversematrix,
